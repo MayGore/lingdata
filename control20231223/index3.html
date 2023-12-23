@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mayya analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color:#dda15e">
+<div class="container-fluid anyClass">
+    <h3 style="color:#283618">
+        <div id="content">
+            <ol>
+                <!-- https://www.geeksforgeeks.org/for-loop-django-template-tags/ -->
+                {% for i in some_text.abc %}
+                <li>{{i}}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </h3>
+</div>
+
+<div class="container-fluid anyClass">
+    <div id="content2">
+        <img src="output.png">
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+    .anyClass {
+  height:700px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+</style>
