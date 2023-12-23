@@ -27,7 +27,7 @@ def analysis(text):
 
     data_words = pd.DataFrame(words)
 
-    graph = data_words["pos"].value_counts().plot.bar(color='green')
+    graph = data_words["pos"].value_counts().plot.bar(color='#182D09')
     # https://stackoverflow.com/questions/19555525/saving-plots-axessubplot-generated-from-python-pandas-with-matplotlibs-savefi
     fig = graph.get_figure()
     fig.savefig("output.png")
